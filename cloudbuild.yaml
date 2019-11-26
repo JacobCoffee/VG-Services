@@ -1,0 +1,58 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  id: BuildWP
+  args:
+  - 'build'
+  - '-t'
+  - 'gcr.io/$PROJECT_ID/wp-custom:latest'
+  - '.'
+  - '-f Dockerfile.wp-psql'
+
+- name: 'gcr.io/cloud-builders/docker'
+  id: PushWP
+  args:
+  - 'push'
+  - 'gcr.io/$PROJECT_ID/wp-custom:latest'
+
+- name: 'gcr.io/cloud-builders/docker'
+  id: Build
+  args:
+  - 'build'
+  - '-t'
+  - 'gcr.io/$PROJECT_ID/vanguard-services:$SHORT_SHA'
+  - '-t'
+  - 'gcr.io/$PROJECT_ID/vanguard-services:master'
+  - '.'
+
+- name: 'gcr.io/cloud-builders/docker'
+  id: PushSha
+  args:
+  - 'push'
+  - 'gcr.io/$PROJECT_ID/vanguard-services:$SHORT_SHA'
+
+- name: 'gcr.io/cloud-builders/docker'
+  id: PushMaster
+  args:
+  - 'push'
+  - 'gcr.io/$PROJECT_ID/vanguard-services:master'
+
+- name: 'gcr.io/cloud-builders/curl'
+  entrypoint: 'bash'
+  id: RewriteManifest
+  args:
+  - '-c'
+  - 'sed "s|gcr.io/$PROJECT_ID/vanguard-services|&:$SHORT_SHA|g" ./deployment/vanguard-k8s.yaml > /workspace/vanguard-k8s.yaml'
+
+- name: 'gcr.io/cloud-builders/kubectl'
+  id: Deploy
+  args:
+  - 'apply'
+  - '-f'
+  - '/workspace/vanguard-k8s.yaml'
+  - '-f'
+  - './deployment/wordpress.yaml'
+  - '-f'
+  - './deployment/ingress.yaml'
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=vanguard'

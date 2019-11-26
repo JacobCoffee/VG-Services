@@ -1,0 +1,341 @@
+{
+  "VanguardRaids": [{
+    "raid_id": "20191005-manual-mc-ony",
+    "events": [{
+      "type": "RAID_START",
+      "data": {
+        "time": 1570302000,
+        "players": [
+          "Acrux",
+          "Auriok",
+          "Balo",
+          "Bokchoy",
+          "Braglin",
+          "Breekoth",
+          "Breva",
+          "Bubblehearth",
+          "Chancer",
+          "Chastite",
+          "Coldlogik",
+          "Cosmic",
+          "Cunctator",
+          "Cydafex",
+          "Dany",
+          "Davidth",
+          "Defiantonez",
+          "Depriest",
+          "Duhvided",
+          "Dunkle",
+          "Echorogue",
+          "Endustmage",
+          "Fairlena",
+          "Flag",
+          "Flynn",
+          "Goldlozsew",
+          "Healingsucks",
+          "Healssogood",
+          "Inzanity",
+          "Javascript",
+          "Jinkiez",
+          "Justwand",
+          "Keenananeek",
+          "Keiana",
+          "Kyote",
+          "Lipschitz",
+          "Lusilla",
+          "Nastyyellow",
+          "Necronia",
+          "Nightmarezz",
+          "Nurple",
+          "Poepoe",
+          "Prisoncity",
+          "Raisin",
+          "Rathuun",
+          "Ravika",
+          "Reins",
+          "Setta",
+          "Sgt",
+          "Sketchin",
+          "Slade",
+          "Soulhunter",
+          "Soulur",
+          "Spotsworth",
+          "Squashh",
+          "Suuki",
+          "Taludan",
+          "Tar",
+          "Themage",
+          "Treeheals",
+          "Tyrshand",
+          "Veginpee",
+          "Xyp",
+          "Zapdos"
+        ],
+        "isLootRaid": false,
+        "startedBy": "Cosmic"
+      }
+    },
+    {
+      "type": "RAID_BOSS",
+      "data": {
+        "time": 1570302000,
+        "name": "Ragnaros",
+        "players": [
+          "Acrux",
+          "Auriok",
+          "Balo",
+          "Bokchoy",
+          "Braglin",
+          "Breekoth",
+          "Breva",
+          "Bubblehearth",
+          "Chancer",
+          "Chastite",
+          "Coldlogik",
+          "Cosmic",
+          "Cunctator",
+          "Cydafex",
+          "Dany",
+          "Davidth",
+          "Defiantonez",
+          "Depriest",
+          "Duhvided",
+          "Dunkle",
+          "Echorogue",
+          "Endustmage",
+          "Fairlena",
+          "Flag",
+          "Flynn",
+          "Goldlozsew",
+          "Healingsucks",
+          "Healssogood",
+          "Inzanity",
+          "Javascript",
+          "Jinkiez",
+          "Justwand",
+          "Keenananeek",
+          "Keiana",
+          "Kyote",
+          "Lipschitz",
+          "Lusilla",
+          "Nastyyellow",
+          "Necronia",
+          "Nightmarezz",
+          "Nurple",
+          "Poepoe",
+          "Prisoncity",
+          "Raisin",
+          "Rathuun",
+          "Ravika",
+          "Reins",
+          "Setta",
+          "Sgt",
+          "Sketchin",
+          "Slade",
+          "Soulhunter",
+          "Soulur",
+          "Spotsworth",
+          "Squashh",
+          "Suuki",
+          "Taludan",
+          "Tar",
+          "Themage",
+          "Treeheals",
+          "Tyrshand",
+          "Veginpee",
+          "Xyp",
+          "Zapdos"
+        ]
+      }
+    },
+    {
+      "type": "RAID_BOSS",
+      "data": {
+        "time": 1570302000,
+        "name": "Onyxia",
+        "players": [
+          "Acrux",
+          "Auriok",
+          "Balo",
+          "Bokchoy",
+          "Braglin",
+          "Breekoth",
+          "Breva",
+          "Bubblehearth",
+          "Chancer",
+          "Chastite",
+          "Coldlogik",
+          "Cosmic",
+          "Cunctator",
+          "Cydafex",
+          "Dany",
+          "Davidth",
+          "Defiantonez",
+          "Depriest",
+          "Duhvided",
+          "Dunkle",
+          "Echorogue",
+          "Endustmage",
+          "Fairlena",
+          "Flag",
+          "Flynn",
+          "Goldlozsew",
+          "Healingsucks",
+          "Healssogood",
+          "Inzanity",
+          "Javascript",
+          "Jinkiez",
+          "Justwand",
+          "Keenananeek",
+          "Keiana",
+          "Kyote",
+          "Lipschitz",
+          "Lusilla",
+          "Nastyyellow",
+          "Necronia",
+          "Nightmarezz",
+          "Nurple",
+          "Poepoe",
+          "Prisoncity",
+          "Raisin",
+          "Rathuun",
+          "Ravika",
+          "Reins",
+          "Setta",
+          "Sgt",
+          "Sketchin",
+          "Slade",
+          "Soulhunter",
+          "Soulur",
+          "Spotsworth",
+          "Squashh",
+          "Suuki",
+          "Taludan",
+          "Tar",
+          "Themage",
+          "Treeheals",
+          "Tyrshand",
+          "Veginpee",
+          "Xyp",
+          "Zapdos"
+        ]
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570302000,
+        "player": "Defiantonez",
+        "amount": 40,
+        "item_id": "18816",
+        "action": "AWARD",
+        "name": "Perdition's Blade"
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570302000,
+        "player": "Echorogue",
+        "amount": 40,
+        "item_id": "16909",
+        "action": "AWARD",
+        "name": "Bloodfang Pants"
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570302000,
+        "player": "Nastyyellow",
+        "amount": 40,
+        "item_id": "18423",
+        "action": "AWARD",
+        "name": "Head of Onyxia"
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570302000,
+        "player": "Prisoncity",
+        "amount": 40,
+        "item_id": "16914",
+        "action": "AWARD",
+        "name": "Netherwind Crown"
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570302000,
+        "player": "Setta",
+        "amount": 40,
+        "item_id": "17107",
+        "action": "AWARD",
+        "name": "Dragon's Blood Cape"
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570302000,
+        "player": "Soulur",
+        "amount": 40,
+        "item_id": "16955",
+        "action": "AWARD",
+        "name": "Judgement Crown"
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570302000,
+        "player": "Defiantonez",
+        "amount": 40,
+        "item_id": "18805",
+        "action": "AWARD",
+        "name": "Core Hound Tooth"
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570302000,
+        "player": "Squashh",
+        "amount": 40,
+        "item_id": "18205",
+        "action": "AWARD",
+        "name": "Eskhandar's Collar"
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570561200,
+        "player": "Braglin",
+        "amount": 40,
+        "item_id": "18816",
+        "action": "AWARD",
+        "name": "Perdition's Blade"
+      }
+    },
+    {
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570561200,
+        "player": "Braglin",
+        "amount": 40,
+        "item_id": "16820",
+        "action": "AWARD",
+        "name": "Nightslayer Chestpiece"
+      }
+    },
+    {
+      "type": "RAID_END",
+      "data": {
+        "time": 1570309200
+      }
+    }]
+  }]
+}

@@ -1,0 +1,208 @@
+{
+  "VanguardRaids": [{
+    "raid_id": "20191012-manual-ony-double",
+    "events": [{
+      "type": "RAID_START",
+      "data": {
+        "time": 1570906800,
+        "players": [
+          "Acrux",
+          "Auriok",
+          "Balo",
+          "Bokchoy",
+          "Breva",
+          "Bubblehearth",
+          "Chancer",
+          "Chastite",
+          "Coldlogik",
+          "Cosmic",
+          "Cunctator",
+          "Cydafex",
+          "Davidth",
+          "Depriest",
+          "Dharmok",
+          "Fairlena",
+          "Flag",
+          "Flynn",
+          "Gimmedatnut",
+          "Goldlozsew",
+          "Healssogood",
+          "Javascript",
+          "Jbladevr",
+          "Justwand",
+          "Keenananeek",
+          "Keiana",
+          "Kyote",
+          "Lepton",
+          "Lleywyn",
+          "Machao",
+          "Marisa",
+          "Nastyyellow",
+          "Nightmarezz",
+          "Nurple",
+          "Poepoe",
+          "Prisoncity",
+          "Raisin",
+          "Ravika",
+          "Setta",
+          "Sgt",
+          "Sinjun",
+          "Sizematterz",
+          "Sketchin",
+          "Smokeybeaar",
+          "Snoogles",
+          "Soulhunter",
+          "Soulur",
+          "Suuki",
+          "Taludan",
+          "Tar",
+          "Themage",
+          "Treeheals",
+          "Veginpee",
+          "Wulv",
+          "Xyp",
+          "Zapdos"
+        ]
+      }
+    },{
+      "type": "RAID_BOSS",
+      "data": {
+        "time": 1570906800,
+        "name": "Onyxia",
+        "players": [
+          "Acrux",
+          "Auriok",
+          "Balo",
+          "Bokchoy",
+          "Breva",
+          "Bubblehearth",
+          "Chancer",
+          "Chastite",
+          "Coldlogik",
+          "Cosmic",
+          "Cunctator",
+          "Cydafex",
+          "Davidth",
+          "Depriest",
+          "Dharmok",
+          "Fairlena",
+          "Flag",
+          "Flynn",
+          "Gimmedatnut",
+          "Goldlozsew",
+          "Healssogood",
+          "Javascript",
+          "Jbladevr",
+          "Justwand",
+          "Keenananeek",
+          "Keiana",
+          "Kyote",
+          "Lepton",
+          "Lleywyn",
+          "Machao",
+          "Marisa",
+          "Nastyyellow",
+          "Nightmarezz",
+          "Nurple",
+          "Poepoe",
+          "Prisoncity",
+          "Raisin",
+          "Ravika",
+          "Setta",
+          "Sgt",
+          "Sinjun",
+          "Sizematterz",
+          "Sketchin",
+          "Smokeybeaar",
+          "Snoogles",
+          "Soulhunter",
+          "Soulur",
+          "Suuki",
+          "Taludan",
+          "Tar",
+          "Themage",
+          "Treeheals",
+          "Veginpee",
+          "Wulv",
+          "Xyp",
+          "Zapdos"
+        ]
+      }
+    },{
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570906800,
+        "player": "Acrux",
+        "amount": 40,
+        "item_id": "16955",
+        "action": "AWARD",
+        "name": "Judgement Crown"
+      }
+    },{
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570906800,
+        "player": "Breva",
+        "amount": 40,
+        "item_id": "16914",
+        "action": "AWARD",
+        "name": "Netherwind Crown"
+      }
+    },{
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570906800,
+        "player": "Chastite",
+        "amount": 40,
+        "item_id": "18423",
+        "action": "AWARD",
+        "name": "Head of Onyxia"
+      }
+    },{
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570906800,
+        "player": "Kyote",
+        "amount": 40,
+        "item_id": "18705",
+        "action": "AWARD",
+        "name": "Mature Black Dragon Sinew"
+      }
+    },{
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570906800,
+        "player": "Machao",
+        "amount": 40,
+        "item_id": "18205",
+        "action": "AWARD",
+        "name": "Eskhandar's Collar"
+      }
+    },{
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570906800,
+        "player": "Sgt",
+        "amount": 40,
+        "item_id": "18423",
+        "action": "AWARD",
+        "name": "Head of Onyxia"
+      }
+    },{
+      "type": "RAID_LOOT",
+      "data": {
+        "time": 1570906800,
+        "player": "Treeheals",
+        "amount": 40,
+        "item_id": "16900",
+        "action": "AWARD",
+        "name": "Stormrage Cover"
+      }
+    },{
+      "type": "RAID_END",
+      "data": {
+        "time": 1570914000
+      }
+    }]
+  }]
+}

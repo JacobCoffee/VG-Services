@@ -1,0 +1,108 @@
+{
+  "VanguardRaids": [{
+    "raid_id": "20191008-manual-molten-core-partial",
+    "events": [{
+      "type": "RAID_START",
+      "data": {
+        "time": 1570561200,
+        "players": [
+          "Boltorias",
+          "Bondreas",
+          "Dunkle",
+          "Gron",
+          "Kyote",
+          "Nightmarezz",
+          "Sizematterz",
+          "Treeheals"
+        ],
+        "isLootRaid": false,
+        "startedBy": "Cosmic"
+      }
+    },{
+      "type": "RAID_BOSS",
+      "data": {
+        "time": 1570561200,
+        "name": "Lucifron",
+        "players": [
+          "Boltorias",
+          "Bondreas",
+          "Dunkle",
+          "Gron",
+          "Kyote",
+          "Nightmarezz",
+          "Sizematterz",
+          "Treeheals"
+        ]
+      }
+    },{
+      "type": "RAID_BOSS",
+      "data": {
+        "time": 1570561200,
+        "name": "Magmadar",
+        "players": [
+          "Boltorias",
+          "Bondreas",
+          "Dunkle",
+          "Gron",
+          "Kyote",
+          "Nightmarezz",
+          "Sizematterz",
+          "Treeheals"
+        ]
+      }
+    },{
+      "type": "RAID_BOSS",
+      "data": {
+        "time": 1570561200,
+        "name": "Gehennas",
+        "players": [
+          "Boltorias",
+          "Bondreas",
+          "Dunkle",
+          "Gron",
+          "Kyote",
+          "Nightmarezz",
+          "Sizematterz",
+          "Treeheals"
+        ]
+      }
+    },{
+      "type": "RAID_BOSS",
+      "data": {
+        "time": 1570561200,
+        "name": "Garr",
+        "players": [
+          "Boltorias",
+          "Bondreas",
+          "Dunkle",
+          "Gron",
+          "Kyote",
+          "Nightmarezz",
+          "Sizematterz",
+          "Treeheals"
+        ]
+      }
+    },{
+      "type": "RAID_BOSS",
+      "data": {
+        "time": 1570561200,
+        "name": "Baron Geddon",
+        "players": [
+          "Boltorias",
+          "Bondreas",
+          "Dunkle",
+          "Gron",
+          "Kyote",
+          "Nightmarezz",
+          "Sizematterz",
+          "Treeheals"
+        ]
+      }
+    },{
+      "type": "RAID_END",
+      "data": {
+        "time": 1570575600
+      }
+    }]
+  }]
+}

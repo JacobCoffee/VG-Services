@@ -1,0 +1,101 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vanguard-services
+  labels:
+    app: vanguard-services
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: vanguard-services
+  template:
+    metadata:
+      labels:
+        app: vanguard-services
+    spec:
+      dnsPolicy: "None"
+      dnsConfig:
+        nameservers:
+        - 8.8.8.8
+        - 8.8.4.4
+      volumes:
+      - name: vanguard-storage
+        secret:
+          secretName: vanguard-storage
+      containers:
+      - name: vanguard-services
+        image: gcr.io/vanguard-255823/vanguard-services
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        readinessProbe:
+          httpGet:
+            path: /__health
+            port: 3000
+        resources:
+          requests:
+            memory: 128Mi
+            cpu: 100m
+          limits:
+            memory: 512Mi
+            cpu: 200m
+        volumeMounts:
+          - name: vanguard-storage
+            mountPath: "/app/secrets/storage"
+        env:
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: vanguard-jwt
+              key: secret
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /app/secrets/storage/vanguard-storage.json
+        - name: TYPEORM_CONNECTION
+          value: postgres
+        - name: TYPEORM_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: vanguard-psql
+              key: username
+        - name: TYPEORM_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: vanguard-psql
+              key: password
+        - name: TYPEORM_HOST
+          value: '10.18.112.3'
+        - name: TYPEORM_PORT
+          value: '5432'
+        - name: TYPEORM_DATABASE
+          value: vanguard_test
+        - name: TYPEORM_SYNCHRONIZE
+          value: 'false'
+        - name: TYPEORM_LOGGING
+          value: 'error'
+        - name: TYPEORM_ENTITIES
+          value: '/app/entities/*.js'
+        - name: TYPEORM_MIGRATIONS
+          value: '/app/migrations/*.js'
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vanguard-services
+spec:
+  type: NodePort
+  selector:
+    app: vanguard-services
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+---
+apiVersion: networking.gke.io/v1beta1
+kind: ManagedCertificate
+metadata:
+  name: vanguard-certificate
+spec:
+  domains:
+    - vanguard-ashkandi.com

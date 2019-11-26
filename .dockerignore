@@ -1,0 +1,14 @@
+.dockerignore
+.env
+.env-default
+.git
+.gitignore
+.gitattributes
+.vscode
+
+build
+data
+node_modules
+
+Dockerfile
+ormconfig.json

@@ -1,0 +1,43 @@
+{
+  "name": "vanguard-services-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "js-cookie": "^2.2.1",
+    "jwt-decode": "^2.2.0",
+    "lodash-es": "^4.17.15",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0",
+    "semantic-ui-react": "^0.88.1"
+  },
+  "scripts": {
+    "start": "set PORT=3001 && craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy": "http://localhost:3000",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^5.5.0",
+    "@semantic-ui-react/craco-less": "^1.1.0",
+    "@types/lodash-es": "^4.17.3",
+    "semantic-ui-less": "^2.4.1"
+  }
+}

@@ -1,0 +1,5 @@
+build
+npm-debug.log
+node_modules
+swagger.json
+vanguard-*.json

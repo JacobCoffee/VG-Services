@@ -57,6 +57,6 @@
     "swagger-jsdoc": "^3.4.0",
     "swagger-ui-express": "^4.1.2",
     "tsconfig-paths": "^3.9.0",
-    "typeorm": "^0.2.19"
+    "typeorm": "^0.2.25"
   }
 }
